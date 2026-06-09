@@ -2,10 +2,9 @@
   description = "CLI tool to convert Chrome DevTools recordings into Akeyless custom rotator webhook scripts";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
+    nixpkgs.follows = "substrate/nixpkgs";
     substrate = {
       url = "github:pleme-io/substrate";
-      inputs.nixpkgs.follows = "nixpkgs";
     };
     flake-utils.url = "github:numtide/flake-utils";
   };
